@@ -8,5 +8,3 @@ between the tags is <content-></content->   <p>content here</p>
 self closing tags or void elements
 <img> - define and embed images
 
-<Attributes-></Attributes-> characteristics of an element or additional information
-<img src="" alt="">
