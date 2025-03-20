@@ -1,4 +1,4 @@
-drop database osura;
+create database SalesDB;
 drop database OsuraJ;
 show databases;
 drop database if exists demo
