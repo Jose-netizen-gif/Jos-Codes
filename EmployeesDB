@@ -1,0 +1,21 @@
+CREATE DATABASE employees;
+USE employees;
+
+CREATE TABLE employees (
+    employeeNumber INT AUTO_INCREMENT PRIMARY KEY,
+    firstName VARCHAR(50),
+    lastName VARCHAR(50),
+    email VARCHAR(100),
+    jobTitle VARCHAR(50)
+);
+INSERT INTO employees (firstName, lastName, email, jobTitle)
+VALUES
+('John', 'Doe', 'john.doe@example.com', 'Sales Rep'),
+('Jane', 'Smith', 'jane.smith@example.com', 'Sales Rep'),
+('Alice', 'Brown', 'alice.brown@example.com', 'Engineer'),
+('Bob', 'Johnson', 'bob.johnson@example.com', 'Sales Rep'),
+('Eve', 'Davis', 'eve.davis@example.com', 'Manager');
+SELECT firstName, lastName, email
+FROM employees
+WHERE jobTitle = 'Sales Rep'
+ORDER BY employeeNumber DESC;
